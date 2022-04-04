@@ -492,7 +492,8 @@ margin-bottom: 1em;
 .about .content p{
 font-family: "Poppins", sans-serif;
 }
-
+.about .content img{float:left;
+}
 .about .content p:last-child {
   margin-bottom: 0;
 }
