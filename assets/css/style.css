@@ -481,7 +481,6 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content blockquote {
-font-family: "Poppins", sans-serif;
 margin:0;
 background:white;
 border: 5px solid #84bd00;
@@ -489,7 +488,7 @@ border-radius: 8px;
 text-align:center;
 color: #58554B;
 padding: 30px 50px;
-font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 blockquote p{
 margin-top: 0;
@@ -508,6 +507,15 @@ blockquote span:before {
   font-size: 60px;
   left:-50px;
   top:10px;
+  line-height: 0;
+}
+blockquote span:after{
+  content: "1201D";
+  font-family: serif;
+  position:absolute;
+  font-size: 60px;
+  right: -50px;
+  bottom: -10px;
   line-height: 0;
 }
 
