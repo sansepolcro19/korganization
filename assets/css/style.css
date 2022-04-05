@@ -481,9 +481,10 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content blockquote {
+font-family: "Poppins", sans-serif;
 margin:0;
 background:white;
-border: 15px solid #FDE640;
+border: 5px solid #84bd00;
 border-radius: 8px;
 text-align:center;
 color: #58554B;
@@ -496,8 +497,8 @@ font-size: 22px;
 line-height: 1.25;
 }
 blockquote span{
-  background: #FDE640;
-  box-shadow: -20px 0 #FDE640, 20px 0 #FDE640;
+  background:#84bd00;
+  box-shadow: -20px 0 #84bd00, 20px 0 #84bd00;
   position:relative;
 }
 blockquote span:before {
@@ -511,8 +512,8 @@ blockquote span:before {
 }
 
 blockquote cite{
-  font-style: normal;
-  text-transform: uppercase;
+  font-style: italic;
+ 
   font-size:14px;
 }
 .about .content p{
