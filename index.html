@@ -568,7 +568,7 @@ For the newspaper, whose metadata standard used is TextMD, we decided to use MAR
 We also add <b>FRBRoo</b>, a bibliographic ontology used for entities published or potentially publisheable for the Document whose metadata standard was not declared.
 <br>The <b>CIDOC Conceptual Reference Model (CRM)</b> is a theoretical and practical tool for information integration in the field of cultural heritage. For this reason, we used it for the Scuplture and The artistic and social movement, since their metadata was missing. 
 We decided to insert also<b>CDWA</b> — a set of guidelines for the description of art, architecture, and other cultural works — because it was the only one providing an entity in order to describe the artistic and social movement. 
-<br>Exif - Exchangeable image file format - is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras and scanners. 
+<br><b>Exif</b> - Exchangeable image file format - is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras and scanners. 
 
 
       <br/><br/></p>
@@ -1052,7 +1052,8 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
         -<b>FOAF</b> (friend of a friend) is a machine-readable ontology describing persons, their activities and their relations to other people and objects. <br>
         -<b>Music Ontology</b> is a general-purpose high-level ontology for the music domain that models the music value chain from production to consumption. <br>
         -<b> CDWA </b> is used for the description of art, architecture, and other cultural works. In our case it was necessary in order to identify the Artistic and social movement.  <br>
-        -<b>FRBRoo</b> is used for describing text objects and their evolution.
+        -<b>FRBRoo</b> is used for describing text objects and their evolution. <br>
+        -<b>DBpedia ontology</b> is a shallow, cross-domain ontology, which has been manually created based on the most commonly used infoboxes within Wikipedia. 
         
         
       </p>
@@ -1257,7 +1258,7 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
             <tbody>
               <tr><td>Who is the director?</td><th>MussoliniSpeaks</th><td>schema:director</td><td>"Edgar G. Ulmer"</td></tr>
               <tr><td>Who has played in it?</td><th>MussoliniSpeaks</th><td>schema:actor</td><td>"Lowell Thomas"</td></tr>
-              <tr><td>What is the type?</td><th>MussoliniSpeaks</th><td>rdf:type</td><td>crm:E12_Production</td></tr>
+              <tr><td>What is the type?</td><th>MussoliniSpeaks</th><td>rdf:type</td><td>dbo:movie</td></tr>
               <tr><td>Where the action takes place?</td><th>MussoliniSpeaks</th><td>schema:contentLocation</td><td>"Italy</br>Rome"</td></tr>
               <tr><td>When it has been published?</td><th>MussoliniSpeaks</th><td>schema:datePublished</td><td>"March 10, 1933"</td></tr>
               <tr><td>What is the content's language?</td><th>MussoliniSpeaks</th><td>dcterms:language</td><td>"en"</td></tr>
@@ -1500,11 +1501,10 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
 
     <div>
       <p>
-        Referring to the single items of the project's domain and in order to link them together inside the RDF file, the team decided to create unique names for all the entities in form of <b>https URIs</b>.
+        Aiming to identify our data uniquely we built URIs with https schemes. In order to do this, we created some fictitious but meaningful paths for each item (/items) and for the other relevant entities: /period, /person and /place respectively on the base of their nature. 
+      
       </p>
-      <p>
-        Moreover, some imaginary paths were designed for them: <b>/items</b> for the 10 items and <b>/events</b>, <b>/timespans</b>, <b>/persons</b>, <b>/institutions</b>, and <b>/websites</b> for the other ones, depending on their nature.
-      </p>
+    
 
       <p>
         <ul>
@@ -1532,6 +1532,8 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
       <h4 style="color: black">TTL Serialization</h4>
     </div>
 
+    <p>At the level of format, we decided to use Turtle, a text-based syntax for RDF serialization.</p>
+   
     <div>
       <script src="https://gist.github.com/elizastuglik/a94021906de4d51a6ef81a98e5803f9a.js"></script>
     </div>
@@ -1555,8 +1557,6 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
             After the <b>RDF production</b> step we created the visualization of the realized knowledge graph using the web service <b>RDF Grapher</b>. 
 
           </p>
-
-
 
         </div>
 
