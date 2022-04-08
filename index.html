@@ -195,7 +195,7 @@
             <h4>"Programma di San Sepolcro"</h4>
             <p>Document</p>
             <div class="portfolio-links">
-              <a href="assets/img/documento.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" class="bx bx-plus"></i></a>
+              <a href="assets/img/documento.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
               <a href="https://it.wikisource.org/wiki/Manifesto_dei_Fasci_italiani_di_combattimento,_pubblicato_su_%22Il_Popolo_d%27Italia%22_del_6_giugno_1919" title="More Details"><i class="bx bx-link"></i></a>
  
               <div class="portfolio-lightbox"> <p class="portfolio-links-text"> On June 6 of 1919 <i>"Il Popolo d'Italia" </i>publishes the fascist central committee platform. 
@@ -496,7 +496,7 @@
           <td>Programma di San Sepolcro</td>
           <td>Document</td>
           <td>Wikisource</td>
-          <td>MARC21, FRBRoo *</a></td>
+          <td>MARCXML, FRBRoo *</a></td>
         </tr>
 
         <tr>
@@ -567,7 +567,7 @@ The <b>MusicBrainz XML Metadata Format MMD</b> is an XML based document format t
 For the newspaper, whose metadata standard used is TextMD, we decided to use MARC21 as well, since TextMD in our opinion was not efficient. 
 We also add <b>FRBRoo</b>, a bibliographic ontology used for entities published or potentially publisheable for the Document whose metadata standard was not declared.
 <br>The <b>CIDOC Conceptual Reference Model (CRM)</b> is a theoretical and practical tool for information integration in the field of cultural heritage. For this reason, we used it for the Scuplture and The artistic and social movement, since their metadata was missing. 
-We decided to insert also<b>CDWA</b> — a set of guidelines for the description of art, architecture, and other cultural works — because it was the only one providing an entity in order to describe the artistic and social movement. 
+<br>We decided to insert also <b>CDWA</b> — a set of guidelines for the description of art, architecture, and other cultural works — because it was the only one providing an entity in order to describe the artistic and social movement. 
 <br><b>Exif</b> - Exchangeable image file format - is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras and scanners. 
 
 
@@ -853,7 +853,7 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
                 <td>Title Text</td> <!-- CDWA -->
                 <td>crm:E35_Title</td>
                 <td>DocumentName</td>
-                <td>frbroo: </td>
+                <td>crm:E35_Title </td>
               </tr>
 
               <tr>
@@ -877,7 +877,7 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
                 <td>Subject Display</td> <!-- CDWA -->
                 <td>crm:E1_CRM_Entity</td>
                 <td>ImageDescription</td>
-                <td>frbroo: </td>
+                <td>crm:E1_CRM_Entity</td>
               </tr>
 
               <tr>
@@ -913,7 +913,7 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
                 <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
                 <td>crm:E54_Dimension</td>
                 <td>/</td>
-                <td>frbroo:</td>
+                <td>crm:E54_Dimension</td>
               </tr>
 
               <tr>
@@ -925,7 +925,7 @@ We decided to insert also<b>CDWA</b> — a set of guidelines for the description
                 <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
                 <td>crm:E54_Duration</td>
                 <td>/</td>
-                <td>frbroo:</td>
+                <td>crm:E54_Duration</td>
               </tr>
 
               <tr>
