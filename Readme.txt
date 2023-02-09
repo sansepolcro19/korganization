@@ -1,6 +1,7 @@
-Thanks for downloading this template!
+# Knowledge Organization and Cultural Heritage
+Final Project "Knowledge Management - Knowledge Organization and Cultural Heritage", Aldo Gangemi @ University of Bologna, MA "DHDK" <br>
+<br>
+# Contributors <br>
+- **[Eliza Stuglik](https://github.com/elizastuglik)** <br>
+- **[Maria Chiara Giorgi](https://github.com/giorgimariachiara)**
 
-Template Name: Gp
-Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
